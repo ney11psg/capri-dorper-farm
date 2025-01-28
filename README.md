@@ -1,2 +1,49 @@
-# capri-dorper-farm
-Website for client Capri dorper farm
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capri Dorper Farm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Capri Dorper Farm</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="booking.html">Book a Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Capri Dorper Farm</h2>
+            <p>Experience the beauty of nature and our thriving Dorper sheep farm.</p>
+            <a href="booking.html" class="btn">Book a Visit</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Our Dorper Sheep</h2>
+            <div class="image-grid">
+                <img src="sheep1.jpg" alt="Dorper Sheep 1">
+                <img src="sheep2.jpg" alt="Dorper Sheep 2">
+                <img src="sheep3.jpg" alt="Dorper Sheep 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Capri Dorper Farm. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
