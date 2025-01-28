@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Visit - Capri Dorper Farm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Capri Dorper Farm</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="booking.html">Book a Visit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="booking">
+        <div class="container">
+            <h2>Book a Farm Visit</h2>
+            <p>Booking fee: 2000 KES per person.</p>
+            <form id="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="visitors">Number of Visitors:</label>
+                <input type="number" id="visitors" name="visitors" min="1" required>
+
+                <label for="date">Visit Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+
+            <!-- M-Pesa Payment Instructions -->
+            <div id="mpesa-instructions" style="display: none; margin-top: 20px;">
+                <h3>M-Pesa Payment Instructions</h3>
+                <p>Please send the total booking fee to the following M-Pesa number:</p>
+                <p><strong>M-Pesa Number: 0712345678</strong></p>
+                <p><strong>Amount:</strong> <span id="mpesa-amount"></span> KES</p>
+                <p>Once payment is complete, click the button below to confirm your booking.</p>
+                <button id="confirm-payment">Confirm Payment</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Capri Dorper Farm. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Calculate total cost
+            const visitors = document.getElementById('visitors').value;
+            const totalCost = visitors * 2000;
+
+            // Show M-Pesa instructions
+            document.getElementById('mpesa-instructions').style.display = 'block';
+            document.getElementById('mpesa-amount').textContent = totalCost;
+
+            // Handle payment confirmation
+            document.getElementById('confirm-payment').addEventListener('click', function () {
+                alert(`Thank you! Your booking and payment of ${totalCost} KES have been confirmed. We will contact you shortly.`);
+                // Reset form
+                document.getElementById('booking-form').reset();
+                document.getElementById('mpesa-instructions').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
