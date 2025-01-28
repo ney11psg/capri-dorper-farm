@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capri Dorper Farm</title>
+    <title>About Us - Capri Dorper Farm</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,22 +20,11 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="about">
         <div class="container">
-            <h2>Welcome to Capri Dorper Farm</h2>
-            <p>Experience the beauty of nature and our thriving Dorper sheep farm.</p>
-            <a href="booking.html" class="btn">Book a Visit</a>
-        </div>
-    </section>
-
-    <section class="gallery">
-        <div class="container">
-            <h2>Our Dorper Sheep</h2>
-            <div class="image-grid">
-                <img src="sheep1.jpg" alt="Dorper Sheep 1">
-                <img src="sheep2.jpg" alt="Dorper Sheep 2">
-                <img src="sheep3.jpg" alt="Dorper Sheep 3">
-            </div>
+            <h2>About Us</h2>
+            <p>Capri Dorper Farm is a leading Dorper sheep farm dedicated to sustainable farming practices and high-quality livestock. Visit us to learn more about our operations and enjoy a day in the countryside.</p>
+            <img src="farm.jpg" alt="Capri Dorper Farm">
         </div>
     </section>
 
